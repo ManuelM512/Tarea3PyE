@@ -1,0 +1,20 @@
+Binom distribution size: 100
+Median: 36.0
+Mode: [37]
+Avg.: 35.79
+
+Binom distribution size: 1000
+Median: 35.0
+Mode: [35]
+Avg.: 35.097
+
+Binom distribution size: 10000
+Median: 35.0
+Mode: [36]
+Avg.: 34.9758
+
+Binom distribution size: 100000
+Median: 35.0
+Mode: [35]
+Avg.: 34.99145
+
