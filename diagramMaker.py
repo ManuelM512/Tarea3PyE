@@ -13,7 +13,7 @@ def boxPlotter(title, n_distributions, labels):
     for patch, color in zip(bplot["boxes"], colors):
         patch.set_facecolor(color)
 
-    plt.savefig(f"{title}_box_plot.png")
+    plt.savefig(f"Diagrams/{title}_box_plot.png")
 
 
 def histogramer(title, n_distributions, labels=""):
@@ -33,4 +33,4 @@ def histogramer(title, n_distributions, labels=""):
         axs[i].set_xlabel("Value")
         axs[i].set_ylabel("Frequency")
 
-    plt.savefig(f"{title}_histogram.png")
+    plt.savefig(f"Diagrams/{title}_histogram.png")
