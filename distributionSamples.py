@@ -5,8 +5,8 @@ def binomSamples(n, p, sizes):
     return [binom.rvs(n, p, size=size) for size in sizes]
 
 
-def poissonSamples(L, sizes):
-    return [poisson.rvs(L, size=size) for size in sizes]
+def poissonSamples(mu, sizes):
+    return [poisson.rvs(mu, size=size) for size in sizes]
 
 
 def geomSamples(p, sizes):
