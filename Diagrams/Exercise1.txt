@@ -1,0 +1,20 @@
+Binom size: 100
+Median: 35.0
+Mode: [35]
+Avg.: 35.33
+
+Binom size: 1000
+Median: 35.0
+Mode: [34]
+Avg.: 35.16
+
+Binom size: 10000
+Median: 35.0
+Mode: [35]
+Avg.: 35.0788
+
+Binom size: 100000
+Median: 35.0
+Mode: [35]
+Avg.: 35.00592
+

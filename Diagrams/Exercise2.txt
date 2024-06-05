@@ -1,0 +1,20 @@
+Geom size: 100
+Median: 9.0
+Mode: [1, 7]
+Avg.: 14.83
+
+Geom size: 1000
+Median: 9.0
+Mode: [1]
+Avg.: 12.425
+
+Geom size: 10000
+Median: 9.0
+Mode: [2]
+Avg.: 12.5302
+
+Geom size: 100000
+Median: 9.0
+Mode: [1]
+Avg.: 12.51385
+

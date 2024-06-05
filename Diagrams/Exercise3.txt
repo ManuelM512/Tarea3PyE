@@ -1,0 +1,20 @@
+Poisson size: 100
+Median: 30.0
+Mode: [31]
+Avg.: 30.13
+
+Poisson size: 1000
+Median: 29.0
+Mode: [29]
+Avg.: 29.733
+
+Poisson size: 10000
+Median: 30.0
+Mode: [31]
+Avg.: 30.0571
+
+Poisson size: 100000
+Median: 30.0
+Mode: [30]
+Avg.: 29.9949
+
