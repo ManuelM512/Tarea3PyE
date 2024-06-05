@@ -2,18 +2,18 @@
 This module contains a function for finding the mode in a sorted distribution.
 
 Functions:
-- mode(sortedDistribution): Finds the mode in a sorted distribution and returns a list of the most frequent elements.
+- mode(distribution): Finds the mode in a sorted distribution and returns a list of the most frequent elements.
 - compareMode(actual, tempMax): Auxiliar to mode. Compares Actual value to the temporaries maximum values. 
 
 """
 
 
-def mode(sortedDistribution):
+def mode(distribution):
     """
     Finds the mode in a sorted distribution and returns a list of the most frequent elements.
 
     Args:
-        sortedDistribution (list): A sorted list representing a distribution.
+        distribution (list): A sorted list representing a distribution.
 
     Returns:
         list: A list of the most frequent elements in the distribution.
@@ -21,13 +21,13 @@ def mode(sortedDistribution):
     """
     tempMax = [["Actual max number", 0]]
     actual = ["Actual number", 1]
-    for i in range(len(sortedDistribution)):
-        if sortedDistribution[i] == actual[0]:
+    for i in range(len(distribution)):
+        if distribution[i] == actual[0]:
             actual[1] += 1
         else:
             compareMode(actual, tempMax)
-            if i != len(sortedDistribution) - 1:
-                actual[0] = sortedDistribution[i]
+            if i != len(distribution) - 1:
+                actual[0] = distribution[i]
                 actual[1] = 1
     compareMode(actual, tempMax)
     return [tempMax[i][0] for i in range(len(tempMax))]
@@ -52,3 +52,18 @@ def compareMode(actual, tempMax):
     if actualAmount > tempMax[0][1]:
         tempMax.clear()
     tempMax.append([actualNumber, actualAmount])
+
+
+def median(distribution):
+    """
+    Finds the median value in a list.
+
+    Parameters:
+    distribution (list):
+    """
+    size = len(distribution)
+    return (
+        distribution[size // 2]
+        if size % 2 != 0
+        else (distribution[size // 2] + distribution[size // 2 - 1]) / 2
+    )
