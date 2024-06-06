@@ -1,5 +1,5 @@
 from diagramMaker import boxPlotter, histogramer
-from probAndStatsAuxiliar import mode, median
+from probAndStatsAuxiliar import mode, median, variance
 
 
 def makeExercise(exerciseNumber, distributionName, distributionSamples, labels):
@@ -12,12 +12,15 @@ def makeExercise(exerciseNumber, distributionName, distributionSamples, labels):
 
         size = len(sortedDistribution)
         distributionMode = mode(sortedDistribution)
+        dModeStr = list2str(distributionMode, ", ")
         distributionMedian = median(sortedDistribution)
         avg = sum(sortedDistribution) / len(sortedDistribution)
+        empVariance = variance(distribution)
 
         data = (
             f"Median: {distributionMedian}\n"
-            + f"Mode: {distributionMode}\nAvg.: {avg}\n"
+            + f"Mode: {dModeStr}\nAvg.: {avg}\n"
+            + f"Empirical variance: {empVariance}\n"
         )
         content = distributionName + f" size: {size}\n" + data + "\n"
         writeToFile(f"Exercise{exerciseNumber}.txt", content)
@@ -28,3 +31,9 @@ def makeExercise(exerciseNumber, distributionName, distributionSamples, labels):
 def writeToFile(filename, content, folder="Diagrams"):
     with open(folder + "/" + filename, "a") as file:
         file.write(content)
+
+
+def list2str(list, concatText=" "):
+    values2str = [str(value) for value in list]
+    resultStr = concatText.join(values2str)
+    return resultStr

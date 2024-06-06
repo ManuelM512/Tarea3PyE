@@ -7,13 +7,17 @@ Functions:
 
 """
 
+# Habían formas más faciles de ver la moda, pero los primeros métodos que vi solo devolvían el primer valor,
+# y como estaba trabajando con una distribución ordenada, pensé que podía hacer un algoritmo con buen orden,
+# entonces implementé mi propio método.
 
-def mode(distribution):
+
+def mode(sortedDistribution):
     """
     Finds the mode in a sorted distribution and returns a list of the most frequent elements.
 
     Args:
-        distribution (list): A sorted list representing a distribution.
+        sortedDistribution (list): A sorted list representing a distribution.
 
     Returns:
         list: A list of the most frequent elements in the distribution.
@@ -21,13 +25,13 @@ def mode(distribution):
     """
     tempMax = [["Actual max number", 0]]
     actual = ["Actual number", 1]
-    for i in range(len(distribution)):
-        if distribution[i] == actual[0]:
+    for i in range(len(sortedDistribution)):
+        if sortedDistribution[i] == actual[0]:
             actual[1] += 1
         else:
             compareMode(actual, tempMax)
-            if i != len(distribution) - 1:
-                actual[0] = distribution[i]
+            if i != len(sortedDistribution) - 1:
+                actual[0] = sortedDistribution[i]
                 actual[1] = 1
     compareMode(actual, tempMax)
     return [tempMax[i][0] for i in range(len(tempMax))]
@@ -67,3 +71,11 @@ def median(distribution):
         if size % 2 != 0
         else (distribution[size // 2] + distribution[size // 2 - 1]) / 2
     )
+
+
+def variance(distribution):
+    sumatoria = 0
+    avg = sum(distribution) / len(distribution)
+    for x in distribution:
+        sumatoria += (x - avg) ** 2
+    return sumatoria / len(distribution)
