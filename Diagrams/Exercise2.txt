@@ -1,20 +1,24 @@
 Geom size: 100
-Median: 9.0
-Mode: [1, 7]
-Avg.: 14.83
+Median: 7.0
+Mode: 6
+Avg.: 12.31
+Empirical variance: 164.27389999999997
 
 Geom size: 1000
-Median: 9.0
-Mode: [1]
-Avg.: 12.425
+Median: 8.0
+Mode: 4
+Avg.: 12.012
+Empirical variance: 146.73785600000014
 
 Geom size: 10000
 Median: 9.0
-Mode: [2]
-Avg.: 12.5302
+Mode: 1
+Avg.: 12.4607
+Empirical variance: 140.8784555099987
 
 Geom size: 100000
 Median: 9.0
-Mode: [1]
-Avg.: 12.51385
+Mode: 1
+Avg.: 12.4521
+Empirical variance: 141.81708558998176
 

@@ -1,20 +1,24 @@
 Poisson size: 100
 Median: 30.0
-Mode: [31]
-Avg.: 30.13
+Mode: 30
+Avg.: 30.65
+Empirical variance: 34.16750000000001
 
 Poisson size: 1000
-Median: 29.0
-Mode: [29]
-Avg.: 29.733
+Median: 30.0
+Mode: 33
+Avg.: 29.948
+Empirical variance: 29.633295999999973
 
 Poisson size: 10000
 Median: 30.0
-Mode: [31]
-Avg.: 30.0571
+Mode: 30
+Avg.: 30.0471
+Empirical variance: 30.012081590000133
 
 Poisson size: 100000
 Median: 30.0
-Mode: [30]
-Avg.: 29.9949
+Mode: 30
+Avg.: 30.00062
+Empirical variance: 29.854859615598155
 

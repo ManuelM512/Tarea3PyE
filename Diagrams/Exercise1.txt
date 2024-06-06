@@ -1,20 +1,24 @@
 Binom size: 100
-Median: 35.0
-Mode: [35]
-Avg.: 35.33
+Median: 34.0
+Mode: 32
+Avg.: 34.8
+Empirical variance: 22.14
 
 Binom size: 1000
 Median: 35.0
-Mode: [34]
-Avg.: 35.16
+Mode: 34
+Avg.: 34.895
+Empirical variance: 21.525975000000045
 
 Binom size: 10000
 Median: 35.0
-Mode: [35]
-Avg.: 35.0788
+Mode: 34
+Avg.: 34.979
+Empirical variance: 23.03095900000033
 
 Binom size: 100000
 Median: 35.0
-Mode: [35]
-Avg.: 35.00592
+Mode: 35
+Avg.: 35.01039
+Empirical variance: 22.88034204790441
 
