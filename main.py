@@ -10,20 +10,20 @@ def main():
     # Ejercicio 1 - Binomial
     p = 0.35
     binomDistributions = binomSamples(n, p, sizes)
-    results = makeExercise(1, "Binom", binomDistributions, labels)
-    print(results)
+    resultsBinom = makeExercise(1, "Binom", binomDistributions, labels)
+    print(resultsBinom)
 
     # Ejercicio 2 - Geométrica
     p = 0.08
     geomDistributions = geomSamples(p, sizes)
-    results = makeExercise(2, "Geom", geomDistributions, labels)
-    print(results)
+    resultsGeom = makeExercise(2, "Geom", geomDistributions, labels)
+    print(resultsGeom)
 
     # Ejercicio 3 - Poisson
     mu = 30
     poissonDistributions = poissonSamples(mu, sizes)
-    results = makeExercise(3, "Poisson", poissonDistributions, labels)
-    print(results)
+    resultsPoisson = makeExercise(3, "Poisson", poissonDistributions, labels)
+    print(resultsPoisson)
 
 
 main()

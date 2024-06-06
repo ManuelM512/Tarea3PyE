@@ -16,7 +16,7 @@ def boxPlotter(title, n_distributions, labels):
     plt.savefig(f"Diagrams/{title}_box_plot.png")
 
 
-def histogramer(title, n_distributions, labels=""):
+def histogramer(title, n_distributions, labels):
     colors = ["ivory", "antiquewhite", "wheat", "peachpuff"]
 
     num_dists = len(n_distributions)
